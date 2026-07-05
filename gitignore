@@ -1,0 +1,16 @@
+# Model weights (too large for GitHub, or should not be public without thought)
+*.pt
+*.pth
+
+# API keys / secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

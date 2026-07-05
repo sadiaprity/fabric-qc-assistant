@@ -1,0 +1,176 @@
+[
+  {
+    "id": "kb001",
+    "defect_type": "hole",
+    "category": "definition",
+    "content": "A hole is a break or puncture in the fabric structure where yarns are missing or torn, creating a visible gap. Common causes include mechanical damage during weaving/knitting, pest damage, or handling damage in the cutting room."
+  },
+  {
+    "id": "kb002",
+    "defect_type": "hole",
+    "category": "severity",
+    "content": "Holes are classified as a critical/major defect under standard 4-point fabric inspection systems, since they directly compromise garment structural integrity and cannot be corrected. Even a single hole in a garment panel typically results in rejection of that panel."
+  },
+  {
+    "id": "kb003",
+    "defect_type": "hole",
+    "category": "action",
+    "content": "Recommended action for a detected hole: reject the affected fabric section entirely, do not attempt rework. Flag the roll/batch for supplier feedback if hole frequency exceeds normal tolerance, and re-inspect surrounding fabric area for additional damage."
+  },
+  {
+    "id": "kb004",
+    "defect_type": "stain",
+    "category": "definition",
+    "content": "A stain is a discoloration or contamination mark on the fabric surface, caused by oil, dirt, dye bleeding, rust from machinery, or chemical spotting during processing or storage."
+  },
+  {
+    "id": "kb005",
+    "defect_type": "stain",
+    "category": "severity",
+    "content": "Stain severity depends on size and visibility. Small stains (under 3mm) in non-visible garment areas may fall within buyer tolerance under a points system. Large or dark stains, or any stain in a highly visible panel (front body, collar), are typically treated as major defects."
+  },
+  {
+    "id": "kb006",
+    "defect_type": "stain",
+    "category": "action",
+    "content": "Recommended action for a detected stain: attempt spot-cleaning only if the stain type is known and treatable (e.g. water-based marks); if untreatable or in a visible panel, reject the section. Always verify against buyer-specific AQL tolerance before batch-level rejection, since some buyers accept minor stains in non-visible areas."
+  },
+  {
+    "id": "kb007",
+    "defect_type": "broken stitch",
+    "category": "definition",
+    "content": "A broken stitch defect refers to discontinuous or snapped stitching along a seam, causing the seam to weaken or open. This typically occurs due to needle damage, incorrect tension settings, or thread quality issues during sewing."
+  },
+  {
+    "id": "kb008",
+    "defect_type": "broken stitch",
+    "category": "severity",
+    "content": "Broken stitches are a major defect, particularly in load-bearing seams (side seams, shoulder seams, crotch seams) where seam failure during wear is a real risk. Broken stitches in decorative or non-structural stitching are lower severity."
+  },
+  {
+    "id": "kb009",
+    "defect_type": "broken stitch",
+    "category": "action",
+    "content": "Recommended action for broken stitch: route to rework for re-stitching rather than outright rejection, since this defect is correctable. Verify thread tension settings on the machine used to prevent recurrence in the same batch."
+  },
+  {
+    "id": "kb010",
+    "defect_type": "needle mark",
+    "category": "definition",
+    "content": "A needle mark is a small hole or puncture pattern left in the fabric by sewing needles, often visible as a line of tiny perforations where a seam was unpicked or a garment was re-sewn."
+  },
+  {
+    "id": "kb011",
+    "defect_type": "needle mark",
+    "category": "severity",
+    "content": "Needle marks are typically a minor-to-moderate defect. Isolated needle marks from normal construction are often within tolerance, but visible needle marks from unpicking/rework on visible panels are flagged as moderate defects since they affect garment appearance."
+  },
+  {
+    "id": "kb012",
+    "defect_type": "needle mark",
+    "category": "action",
+    "content": "Recommended action for needle marks: assess visibility under standard inspection lighting and distance (typically 1 meter). If marks are visible at standard inspection distance on a main panel, flag for review; otherwise accept within tolerance."
+  },
+  {
+    "id": "kb013",
+    "defect_type": "pinched fabric",
+    "category": "definition",
+    "content": "Pinched fabric refers to a fold, pucker, or tuck accidentally caught in a seam during sewing, creating an unintended crease or bunching in the fabric that was not part of the garment design."
+  },
+  {
+    "id": "kb014",
+    "defect_type": "pinched fabric",
+    "category": "severity",
+    "content": "Pinched fabric is typically a moderate defect affecting appearance and fit rather than structural integrity. Severity increases if the pinch is on a highly visible panel or affects garment drape significantly."
+  },
+  {
+    "id": "kb015",
+    "defect_type": "pinched fabric",
+    "category": "action",
+    "content": "Recommended action for pinched fabric: route to rework for unpicking and re-sewing the affected seam section. This is generally correctable without fabric replacement."
+  },
+  {
+    "id": "kb016",
+    "defect_type": "horizontal",
+    "category": "definition",
+    "content": "Horizontal line/bar defects appear as unwanted horizontal streaks or bands running across the fabric width, commonly caused by weft-related issues in weaving (weft bars), inconsistent yarn tension, or dyeing irregularities."
+  },
+  {
+    "id": "kb017",
+    "defect_type": "horizontal",
+    "category": "severity",
+    "content": "Horizontal bar defects are moderate-to-major depending on contrast and visibility. Faint bars visible only under close inspection may be within tolerance; strongly contrasted bars visible at normal viewing distance are major defects and often indicate a systemic issue with an entire fabric roll rather than an isolated flaw."
+  },
+  {
+    "id": "kb018",
+    "defect_type": "horizontal",
+    "category": "action",
+    "content": "Recommended action for horizontal bar defects: if isolated to a small section, cut around the defect during pattern cutting. If the defect recurs across the roll, reject the entire roll and flag for supplier-level investigation into weaving/dyeing process."
+  },
+  {
+    "id": "kb019",
+    "defect_type": "vertical",
+    "category": "definition",
+    "content": "Vertical line defects appear as streaks running along the fabric length (warp direction), typically caused by broken or uneven warp yarns, tension irregularities during weaving, or knitting needle malfunctions."
+  },
+  {
+    "id": "kb020",
+    "defect_type": "vertical",
+    "category": "severity",
+    "content": "Vertical line defects are treated similarly to horizontal bars in severity assessment: moderate if faint and isolated, major if strongly visible or recurring, since they often indicate an ongoing mechanical fault in the loom or knitting machine rather than a one-off flaw."
+  },
+  {
+    "id": "kb021",
+    "defect_type": "vertical",
+    "category": "action",
+    "content": "Recommended action for vertical line defects: inspect adjacent fabric sections for recurrence, since a mechanical cause typically produces the defect repeatedly along the roll length. Reject affected sections; escalate to supplier if the pattern repeats consistently."
+  },
+  {
+    "id": "kb022",
+    "defect_type": "lines",
+    "category": "definition",
+    "content": "General line defects (not clearly horizontal or vertical) cover irregular streaking, slub lines, or thickness variation lines in the fabric surface, often from uneven yarn thickness or spinning defects."
+  },
+  {
+    "id": "kb023",
+    "defect_type": "lines",
+    "category": "severity",
+    "content": "Line defects are generally moderate severity, assessed primarily on visibility and whether they affect fabric hand-feel or only appearance. Note this defect type can visually resemble hole or stain defects in classifier predictions, so a confidence check and manual double-check is advised for low-confidence predictions."
+  },
+  {
+    "id": "kb024",
+    "defect_type": "lines",
+    "category": "action",
+    "content": "Recommended action for line defects: assess under standard lighting at normal inspection distance. If within buyer's accepted points-per-100-yards tolerance, accept with note; otherwise reject the affected section."
+  },
+  {
+    "id": "kb025",
+    "defect_type": "defect free",
+    "category": "definition",
+    "content": "Defect-free fabric shows no visible structural, surface, or color irregularities under standard inspection conditions and passes all quality checkpoints for the intended garment use."
+  },
+  {
+    "id": "kb026",
+    "defect_type": "defect free",
+    "category": "action",
+    "content": "Defect-free fabric proceeds directly to the next production stage (cutting/sewing) without rework. Note: this classifier has a known tendency to occasionally flag clean fabric as a minor stain (false positive); when confidence is below 85% on a defect-free vs stain distinction, route to quick manual visual check rather than auto-rejecting."
+  },
+  {
+    "id": "kb027",
+    "defect_type": "general",
+    "category": "aql_standard",
+    "content": "Most garment QC programs use Acceptable Quality Limit (AQL) sampling and 4-point fabric inspection systems, where defects are scored by size (points 1-4) and total points per 100 square yards determine roll acceptance. This is industry-standard practice referenced generally in textile QC, and specific buyer thresholds vary by contract."
+  },
+  {
+    "id": "kb028",
+    "defect_type": "general",
+    "category": "confidence_handling",
+    "content": "For any AI-assisted defect classification, predictions below 85% confidence should be routed to human review rather than auto-actioned, regardless of predicted defect type. This is standard practice for human-in-the-loop QC systems to avoid compounding classifier errors into shipping decisions."
+  },
+  {
+    "id": "kb029",
+    "defect_type": "general",
+    "category": "escalation",
+    "content": "Any defect type occurring at a rate significantly above historical baseline for a given fabric roll or supplier batch should be escalated beyond individual-piece rejection to a batch-level quality review, since recurring defects often indicate a process or machine fault rather than isolated flaws."
+  }
+]
