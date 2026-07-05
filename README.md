@@ -38,12 +38,17 @@ Streamlit dashboard  ──► image + heatmap + QC note + human-review flag, on
 
 Trained and evaluated on a 3,077-image, 9-class fabric defect dataset (real production-line images captured under controlled industrial camera conditions).
 
-- **Test accuracy: 95.9%** (weighted F1: 0.96)
+- **Test accuracy: 96.1%** (weighted F1: 0.96)
 - Strong per-class performance on structurally distinct defects (hole, broken stitch, needle mark, pinched fabric)
 - **Known limitation:** the model occasionally confuses clean fabric with a minor stain (~4% false-positive rate on defect-free samples) — the safer failure direction for a QC system, since it triggers extra manual review rather than missing a real defect. Documented and handled explicitly in the knowledge base (see `kb026`).
 - **Known limitation:** performance degrades on casual phone-camera images, since the model was trained on controlled industrial-camera conditions (fixed distance, consistent lighting). This is expected distribution shift, not a model bug — and the confidence-threshold routing correctly produces low-confidence scores on these out-of-distribution images rather than confidently misclassifying them.
 
-See `assets/confusion_matrix.png` and `assets/gradcam_samples_grid.png` for full breakdowns.
+See `assets/confusion_matrix.png` and `assets/gradcam_random_samples.png` for full breakdowns.
+
+## Real world testing
+
+Informally tested on a casual phone-camera photo (outside the training distribution of controlled industrial-camera images). The model correctly produced a low-confidence prediction (36.7%) rather than a falsely confident one, triggering the human-review flag as designed — demonstrating the confidence-threshold safety mechanism working as intended on out-of-distribution input.
+
 
 ## Tech stack
 
@@ -64,8 +69,8 @@ fabric-qc-assistant/
 ├── qc_knowledge_base.json              # 29-entry QC knowledge base
 └── assets/
     ├── confusion_matrix.png
-    ├── gradcam_samples_grid.png
-    └── demo_screenshot.png
+    ├── gradcam_random_samples.png
+    └── app_demo.png
 ```
 
 Note: the trained model weights (`fabric_defect_classifier.pt`, ~95MB) are not committed to this repo due to size. Retrain using `train_fabric_defect_classifier.py` on the linked dataset, or contact me for the weights file.
@@ -80,8 +85,9 @@ streamlit run streamlit_app.py
 
 ## Honest scope notes
 
-This is a portfolio-scale project, not a production deployment — trained on a public dataset, tested by me, not validated on an actual factory floor. The value demonstrated is the *combination*: perception (CV), interpretability (Grad-CAM), and grounded reasoning (RAG) wired into one coherent pipeline for a real industry problem, not a novel technique in any individual component.
+This is a portfolio-scale project, not a production deployment — trained on a public dataset, tested by me, not validated on an actual factory floor. The value demonstrated is the *combination*: perception (CV), interpretability (Grad-CAM), and grounded reasoning (RAG) wired into one coherent pipeline for a real industry problem, not a novel technique in any individual component. See fabric_qc_training_notebook.ipynb for the full training run and evaluation outputs.
 
 ## Author
 
-Sadia Akhter (Prity) — [LinkedIn] · [GitHub]
+Sadia Akhter
+— [LinkedIn](https://www.linkedin.com/in/sadia-akhter-prity/)
