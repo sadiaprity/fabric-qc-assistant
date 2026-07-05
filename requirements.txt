@@ -1,0 +1,10 @@
+streamlit
+torch
+torchvision
+grad-cam
+sentence-transformers
+google-generativeai
+pillow
+numpy
+scikit-learn
+matplotlib
